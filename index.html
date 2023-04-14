@@ -6,9 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets\style\img\favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets\style\css\style.css" rel="stylesheet" type="text/css">
+    <link rel="preload" href="assets\style\css\style.css" as="style" >  
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid justify-content-lg-end">
+      <a class="navbar-brand" href="#">DigiWorld</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">       
+        <form id="search-form" class="form-inline my-6 d-flex col-lg-6 ml-auto mt-2 ml-lg-0 ml-xl-auto">
+          <div class="input-group">     
+            <label for="search-input" class="form-label" >Buscar digimon:</label>    
+            <input type="text" class="form-control" id="search-input" placeholder="Buscar digimon:" autofocus>
+            <button class="btn btn-primary" id="search-button">Buscar</button>
+          </div>
+        </form>  
+      </div>
+    </div>
+  </nav>
+  <div class="cardStyle">
+    <div id="digimon-card-container"></div> 
+  </div>
+  <div class="contenedortabla">    
+    <div class="tableOverflow">
+      <table id="digimon-table" class="table table-light table-bordered border-info text-center  rounded-top mt-5">
+        <thead>
+          <tr>
+            <th>Ilustración</th>
+            <th>Nombre</th>
+            <th>Nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>    
+    </div>  
+  </div> 
 
-    
+    <script src="assets\javascript\fetch.js"></script>      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+
